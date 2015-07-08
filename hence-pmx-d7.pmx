@@ -1,0 +1,44 @@
+---
+name: hence-pmx-d7
+description: Drupal 7 / PostgreSQL panamax template
+keywords: ''
+type: Drupal
+documentation: |
+  Drupal 7.38 with PostgreSQL 9.3
+  =========
+
+  ##Instructions
+  Adjust the values of the environmental variables on the PostgreSQL service to match your needs. When configuring Drupal via the UI, use these values.
+
+  For Database Address, use the PostgreSQL service ALIAS value from your link entry on the Drupal service. This value is mapped to the IP of the PostGreSQL container.No port is needed. Be sure to select **PostgreSQL** as your database type when filling in the Drupal setup.
+
+  To view the GUI after launching the template, browse to http://panamax.local:8080.
+images:
+- name: PostgreSQL
+  source: centurylink/postgresql:9.3
+  category: DB
+  type: Default
+  expose:
+  - '5432'
+  ports:
+  - host_port: '5432'
+    container_port: '5432'
+    proto: TCP
+  environment:
+  - variable: USER
+    value: root
+  - variable: PASS
+    value: root
+  - variable: DB
+    value: drupal
+- name: centurylink_drupal
+  source: centurylink/drupal:7.38
+  category: Web
+  type: Default
+  ports:
+  - host_port: '8080'
+    container_port: '80'
+    proto: TCP
+  links:
+  - service: PostgreSQL
+    alias: POSTGRES
