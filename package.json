@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "preferGlobal": true,
+  "bin": {
+    "hence": "bin/hence.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/hence-io/client.git"
@@ -21,5 +25,22 @@
   "bugs": {
     "url": "https://github.com/hence-io/client/issues"
   },
-  "homepage": "https://github.com/hence-io/client"
+  "homepage": "https://github.com/hence-io/client",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "complete": "^0.4.4",
+    "fs-extra": "^0.23.1",
+    "glush-util": "git://github.com/hence-io/glush-util",
+    "gulp": "^3.9.0",
+    "gulp-conflict": "^0.4.0",
+    "gulp-git": "^1.2.4",
+    "gulp-template": "^3.0.0",
+    "hence-util": "git://github.com/hence-io/hence-util",
+    "lodash": "^3.10.1",
+    "path-extra": "^1.0.3",
+    "request": "^2.60.0",
+    "shelljs": "^0.5.3",
+    "validator": "^4.0.2",
+    "winston": "^1.0.1"
+  }
 }
