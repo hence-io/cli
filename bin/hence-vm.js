@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-var hence= require('../lib/machine');
+var henceVm = require('../lib/machine');
