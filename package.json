@@ -41,6 +41,7 @@
     "request": "^2.60.0",
     "shelljs": "^0.5.3",
     "shelljs-nodecli": "^0.1.1",
+    "vagrant": "0.0.1",
     "winston": "^1.0.1"
   }
 }
