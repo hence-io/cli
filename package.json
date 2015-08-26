@@ -1,6 +1,6 @@
 {
   "name": "hence-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A command-line tool to interface with the hence.io project",
   "main": "index.js",
   "scripts": {
@@ -30,12 +30,12 @@
     "commander": "^2.8.1",
     "complete": "^0.4.4",
     "fs-extra": "^0.23.1",
-    "glush-util": "git://github.com/hence-io/glush-util",
+    "glush-util": "hence-io/glush-util#v0.1.6",
     "gulp": "^3.9.0",
     "gulp-conflict": "^0.4.0",
     "gulp-git": "^1.2.4",
     "gulp-template": "^3.0.0",
-    "hence-util": "git://github.com/hence-io/hence-util",
+    "hence-util": "hence-io/hence-util#v0.0.2",
     "lodash": "^3.10.1",
     "needle": "^0.10.0",
     "path-extra": "^1.0.3",
