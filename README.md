@@ -20,7 +20,11 @@ You can view a list of available commands by typing:
 
 To view help for any subcommand, type:
 
-`hence [command] --help` or `hence [command] [subcommand] -h`
+`hence [command] --help`
+
+or
+
+ `hence [command] [subcommand] -h`
 
 ## Getting Started
 To initialize a new hence.io development environment, run the following from your terminal:
