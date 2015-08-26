@@ -24,7 +24,7 @@ To view help for any subcommand, type:
 
 or
 
- `hence [command] [subcommand] -h`
+`hence [command] [subcommand] -h`
 
 ## Getting Started
 To initialize a new hence.io development environment, run the following from your terminal:
