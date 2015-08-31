@@ -1,12 +1,12 @@
 # Hence Client
 This project aims to provide a client interface to the hence.io framework.
 
-**Please note:** this is currently under heavy development, and it is not recommended that anyone but hence.io developers use it at this point.
+**NOTE:** This project is currently under heavy development, and is very likely to change. It is not recommended that anyone but hence.io developers use it at this point.
 
 ## Installation
 This package should be installed globally.
 
-`npm install -g hence-client`
+`npm install -g hence-cli`
 
 ## Prerequisites
 In order to use the `hence machine` commands, you'll need the following set up in your local OS (only tested on OSx so far, but most commands are expected to work in Windows/Linux as well)
