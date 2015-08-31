@@ -1,6 +1,6 @@
 {
-  "name": "hence-client",
-  "version": "0.0.3",
+  "name": "hence-cli",
+  "version": "0.0.1",
   "description": "A command-line tool to interface with the hence.io project",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hence-io/client.git"
+    "url": "https://github.com/hence-io/cli.git"
   },
   "keywords": [
     "hence",
@@ -23,9 +23,9 @@
   "author": "Clint Beacock <clint@therefore.ca>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hence-io/client/issues"
+    "url": "https://github.com/hence-io/cli/issues"
   },
-  "homepage": "https://github.com/hence-io/client",
+  "homepage": "https://github.com/hence-io/cli",
   "dependencies": {
     "commander": "^2.8.1",
     "complete": "^0.4.4",
