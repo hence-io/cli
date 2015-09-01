@@ -1,3 +1,3 @@
 #!/usr/bin/env node
 
-var henceMachine = require('../lib/project');
+var henceProject= require('../lib/project');

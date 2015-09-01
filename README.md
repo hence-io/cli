@@ -27,7 +27,7 @@ or
 `hence [command] [subcommand] -h`
 
 ## Quick Start Guide
-### Initialize a new Machine (VM)
+### 1. Initialize a new Machine (VM)
 To initialize a new hence.io development environment, run the following from your terminal:
 
 `hence machine init`
@@ -49,19 +49,47 @@ After setting up your config options, you will be prompted for final confirmatio
 
 Upon completion of the **machine init** wizard, a vagrant/virtualbox vm with a rancher server and agent will be installed and configured for use. Here are the main components it will install:
 
-**VM Host**
+_VM Host_
 * Ubuntu 14.04 OS
 * Docker 1.7.1 (with TCP forwarding to port 2375)
 
-**Vagrant Plugins**
+_Vagrant Plugins_
 * [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)
 * [vagrant-gatling-rsync](https://github.com/smerrill/vagrant-gatling-rsync)
 * [vagrant-hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater)
 
-**Rancher** (Docker container management infrastructure.  [Rancher Homepage](http://rancher.com/rancher/) | [Rancher Documenation](http://docs.rancher.com/))
+_Rancher_ (Docker container management infrastructure.  [Rancher Homepage](http://rancher.com/rancher/) | [Rancher Documenation](http://docs.rancher.com/))
 * Rancher Server instance
 * Rancher Agent instance
 * Rancher UI
+
+### 2. Launch the Rancher dashboard
+If your host OS allows it, the Rancher dashboard should open up by default after installation.  If it doesn't open, it should be available at either <IP_ADDRESS | NAME>:<PORT>, which will depend on the options you chose during installation.  For the default installation, it would be available at http://172.19.8.100:8080 (Linux, OSx, Windows), or http://hence:8080 (Linux, OSx).
+
+You can open it yourself using the CLI with the following command:
+
+`hence machine dashboard`
+
+### 3. Connect with the Rancher API
+In order to deploy your projects on Rancher, you'll need to connect it.
+
+#### Hard Way :(
+This can be done as a manual multi-step process, as documented by Rancher [here](http://docs.rancher.com/rancher/quick-start-guide/#create-a-multi-container-application-using-rancher-compose), which will involve manually creating API keys, downloading and installing the Rancher-Compose tool, and exporting the appropriate environment variables to your current terminal session.
+
+#### Easy Way :)
+Thankfully, this can also be accomplished through the Hence CLI with the following 2 commands:
+
+`hence machine connect -i`
+
+This will accomplish 2 things:
+1. It will make an initial connection to the Rancher API, and because there are no keys associated with your new machine, it will create them
+2. The '-i' switch will cause it to install local dependancies, which are rancher-compose and docker@1.7.1
+
+Now we need to export the connection variables to our local terminal session:
+
+`eval $(hence machine connect -x)`
+
+This will cause the needed environment variables to be exported to your current terminal session, and will look very familiar to anyone who's used docker-machine before.
 
 ## Command-Specific Documentation
 * [hence machine](docs/machine.md)
