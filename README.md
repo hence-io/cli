@@ -71,7 +71,7 @@ Upon completion of the **machine init** wizard, a vagrant/virtualbox vm with a r
 For now, you'll need to resort to viewing the help for the available commands.
 
 <!-- Images -->
-[install-1]: images/install-1.png "Installation: Step-1"
+[install-1]: images/Install-1.png "Installation: Step-1"
 
 <!-- Vagrant URLs -->
 [rancher-url]: http://rancher.com/rancher/
