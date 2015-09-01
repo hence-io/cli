@@ -33,7 +33,7 @@ To initialize a new hence.io development environment, run the following from you
 `hence machine init`
 
 This should open up an interactive wizard as pictured below.
-![Installation type options][install-1]
+![Installation type options](images/Install-1.png "Installation: Step-1")
 
 The wizard will first ask you whether or not you would like to use a custom setup, or go with the defaults.  If you choose to use a custom setup (which is the initially selected option), you will be shown the default setting at each config prompt, and be able to accept it with pressing 'enter', or provide your own.
 
@@ -54,35 +54,16 @@ Upon completion of the **machine init** wizard, a vagrant/virtualbox vm with a r
 * Docker 1.7.1 (with TCP forwarding to port 2375)
 
 **Vagrant Plugins**
-* [vagrant-vbguest]
-* [vagrant-gatling-rsync]
-* [vagrant-hostsupdater]
+* [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)
+* [vagrant-gatling-rsync](https://github.com/smerrill/vagrant-gatling-rsync)
+* [vagrant-hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater)
 
-**Rancher** (Docker container management infrastructure.  [Rancher Homepage][rancher-url] | [Rancher Documenation][rancher-docs])
+**Rancher** (Docker container management infrastructure.  [Rancher Homepage](http://rancher.com/rancher/) | [Rancher Documenation](http://docs.rancher.com/))
 * Rancher Server instance
 * Rancher Agent instance
 * Rancher UI
 
 ## Command-Specific Documentation
-* [hence machine][hence-machine]
-* [hence compose][hence-compose]
-* [hence project][hence-project]
-
-For now, you'll need to resort to viewing the help for the available commands.
-
-<!-- Images -->
-[install-1]: images/Install-1.png "Installation: Step-1"
-
-<!-- Vagrant URLs -->
-[rancher-url]: http://rancher.com/rancher/
-[rancher-docs]: http://docs.rancher.com/
-
-<!-- Rancher URLs -->
-[vagrant-vbguest]: https://github.com/dotless-de/vagrant-vbguest
-[vagrant-gatling-rsync]: https://github.com/smerrill/vagrant-gatling-rsync
-[vagrant-hostsupdater]: https://github.com/cogitatio/vagrant-hostsupdater
-
-<!-- Hence URLs -->
-[hence-machine]: docs/machine.md
-[hence-compose]: docs/compose.md
-[hence-project]: docs/project.md
+* [hence machine](docs/machine.md)
+* [hence compose](docs/compose.md)
+* [hence project](docs/project.md)
