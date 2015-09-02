@@ -8,7 +8,7 @@
   },
   "preferGlobal": true,
   "bin": {
-    "hence": "bin/hence.js"
+    "hence": "bin/hence"
   },
   "repository": {
     "type": "git",
