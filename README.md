@@ -137,6 +137,9 @@ As well, and at the bare minimum, you should also read this quick overview of [r
 
 ## Command-Specific Documentation
 Click the appropriate links below to read full documentation of the various Hence CLI commands available.
-* [hence machine](docs/machine.md)
-* [hence compose](docs/compose.md)
-* [hence project](docs/project.md)
+
+Command | Description
+--- | ---
+[machine](./docs/machine.md) | <br>Create and manage Hence.io Machines.  Currently limitied to local VM's, but remote Machine functionality is coming soon.<br><br>
+[project](./docs/project.md) | <br>**_(coming soon)_** Create and manage Hence.io Projects.  Allows easy definition of Hence Projects, and running them on any active Machines.<br><br>
+[compose](./docs/compose.md) | <br>Run rancher-compose commands against any machine.  The `project` command will encompass what this does and more, but this is very useful if you'd like to experiment with on-off stacks without creating Hence Projects out of them.<br><br>
