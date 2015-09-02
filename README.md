@@ -79,7 +79,7 @@ This can be done as a manual multi-step process, as documented by Rancher [here]
 #### Easy Way :)
 Thankfully, this can also be accomplished through the Hence CLI with the following 2 commands:
 
-`hence machine connect -i`
+> `hence machine connect -i`
 
 This will accomplish 2 things:
 1. It will make an initial connection to the Rancher API, and because there are no keys associated with your new machine, it will create them
@@ -96,7 +96,26 @@ Your machine is now ready for use.  Below are a couple of important pointers reg
 
 #### Mounting your local files into the VM
 Now that you have a fully-functional VM set up, you're going to want to mount your project code from your Host OS (i.e. Mac OSx, Windows) into your VM so that it will be available to the docker containers that will be running it.  There are 2 folders set up in your VM installation location for this:
-1. projects: This is where you'll place (or symlink in) your project code
+1. projects: This is where you'll place (or symlink in) your project code.
+2. mount: This directory is for mounting any miscellaneous files/folders that you want in the VM, but don't really belong in the project directory.
+
+For projects, we use and recommend a similar file structure as depicted below, though it's entirely up to you how you want to organize your own:
+
+    | machine root
+    ├─ projects
+    |  ├─ [project-1]
+    |  |  ├─ public (put your project code in this folder)
+    |  |  ├─ data
+    |  |  |  ├─ mysql
+    |  |  |  ├─ solr
+    |  |  |  └─ etc
+    |  |  └─ etc
+    |  |
+    |  └─ [project-2]
+    |     └─ etc
+    |
+    └─ mount
+       └─ [whatever-you-want]
 
 #### Further suggested reading
 The Hence.io framework relies heavily on docker containers for all it's project management. If you are unfamiliar with docker, you should start by reading up on at least the following concepts from the Docker Documentation.
@@ -113,8 +132,6 @@ Rancher uses docker-compose.yml files to 'tie' these containers together so that
 It's suggested that you have a good read over the [Rancher Quick Start Guide](http://docs.rancher.com/rancher/quick-start-guide/) for a good understanding of how to use rancher and rancher-compose (or `hence compose`, which is a convenience wrapper around it). Since the rancher server and agents have already been installed for you, you should begin reading at the 'Create a Container through UI' section ([link](http://docs.rancher.com/rancher/quick-start-guide/#create-a-container-through-ui)).
 
 As well, and at the bare minimum, you should also read this quick overview of [rancher concepts](http://docs.rancher.com/rancher/concepts/) that will shed some light on what rancher is doing and is capable of.
-
-As well, you should read the documentation for the Hence VM Environment, to get a good idea of how to use it.
 
 ## Command-Specific Documentation
 Click the appropriate links below to read full documentation of the various Hence CLI commands available.
