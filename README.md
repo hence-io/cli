@@ -41,7 +41,7 @@ The default VM settings are as follows:
 * **Install Location**: $HOME/hence - This location must be present.  If it does not exist, the installer will attempt to create it.
 * **Name**: hence
 * **IP Address**: 172.19.8.100
-* **Dashboard** Port: 8080
+* **Dashboard Port**: 8080
 * **CPU's**: 2 (you should use the max number of CPU's available on your machine)
 * **Memory**: 2048 (recommended is 4096 if your machine can handle it)
 
@@ -141,5 +141,5 @@ Click the appropriate links below to read full documentation of the various Henc
 Command | Description
 --- | ---
 <br>[machine](./docs/machine.md)<br><br> | <br>Create and manage Hence.io Machines.  Currently limitied to local VM's, but remote Machine functionality is coming soon.<br><br>
-<br>[project](./docs/project.md)<br><br> | <br>**_(coming soon)_** Create and manage Hence.io Projects.  Allows easy definition of Hence Projects, and running them on any active Machines.<br><br>
 <br>[compose](./docs/compose.md)<br><br> | <br>Run rancher-compose commands against any machine.  The `project` command will encompass what this does and more, but this is very useful if you'd like to experiment with on-off stacks without creating Hence Projects out of them.<br><br>
+<br>[project](./docs/project.md)<br><br> | <br>**_(coming soon)_** Create and manage Hence.io Projects.  Allows easy definition of Hence Projects, and running them on any active Machines.<br><br>
