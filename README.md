@@ -33,7 +33,7 @@ To initialize a new [Hence.io development environment](https://github.com/hence-
 `hence machine init`
 
 This should open up an interactive wizard as pictured below.
-![Installation type options](images/Install-1.png "Installation: Step-1")
+![Installation type options](images/install-wizard.gif "Installation: Step-1")
 
 The wizard will first ask you whether or not you would like to use a custom setup, or go with the defaults.  If you choose to use a custom setup (which is the initially selected option), you will be shown the default setting at each config prompt, and be able to accept it with pressing 'enter', or provide your own.
 

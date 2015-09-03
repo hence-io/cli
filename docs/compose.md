@@ -1,4 +1,4 @@
 # Hence Compose
 
 ---
-[Back to Commands](./README.md)
+[Back to Hence Commands](./README.md)

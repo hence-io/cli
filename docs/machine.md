@@ -5,9 +5,9 @@ Many of the commands are simply wrapping the corresponding Vagrant commands, whi
 
 ## General Usage Notes
 ### Getting help
-Help for all commands within the Hence CLI is available via:
+Help for all commands within the Hence Machine CLI is available via:
 
-`[command] [optional_subcommands...] -h`<br><br>
+`hence machine [optional_subcommand] -h`<br><br>
 
 ### The 'Current' machine
 Most of the machine commands take an optional [name] argument.  This refers to the machine name as chosen during the `machine init` process.
