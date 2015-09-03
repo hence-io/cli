@@ -23,7 +23,7 @@ If you followed the [Quick Start Guide](../README.md#quick-start-guide), you'll 
 ## Command List
 Command | Description
 --- | ---
-<br>[*](#-wildcard-command-)<br><br> | <br>Wildcard placeholder. Replace (*) with any _rancher-compose_ command to run it against a machine<br><br>
+<br>[*](#-wildcard-command)<br><br> | <br>Wildcard placeholder. Replace (*) with any _rancher-compose_ command to run it against a machine<br><br>
 <br>[rancher-help](#rancher-help)<br><br> | <br>View the help text for rancher-compose<br><br>
 
 ---
