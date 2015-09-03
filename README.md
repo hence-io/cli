@@ -117,7 +117,7 @@ For projects, we use and recommend a similar file structure as depicted below, t
     └─ mount
        └─ [whatever-you-want]
 
-NOTE: Due to performance reasons, we are using rsync to mount local files into the VM over NFS file shares.  This is a one-way sync, and thus, files created by your application will not automatically rsync'ed back down to your local filesystem.  Rsync
+NOTE: Due to performance reasons, we are using rsync to mount local files into the VM over NFS file shares.  This is a one-way sync, and thus, files created by your application will not automatically rsync'ed back down to your local filesystem.
 
 #### Further suggested reading
 The Hence.io framework relies heavily on docker containers for all it's project management. If you are unfamiliar with docker, you should start by reading up on at least the following concepts from the Docker Documentation.
