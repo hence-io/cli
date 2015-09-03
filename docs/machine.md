@@ -84,6 +84,12 @@ _Rancher_ (Docker container management infrastructure.  [Homepage](http://ranche
 * Rancher Agent instance
 * Rancher UI
 
+**Arguments**<br>
+_none_
+
+**Options**<br>
+_none_
+
 [Back to Command List](#command-list)<br><br>
 
 ## start
@@ -190,7 +196,7 @@ Lists all available machines, and shows the current/active machine with an aster
 It can also display the VM running statuses of each machine (i.e. stopped, running, aborted, etc...).
 
 **Arguments**<br>
-_name_: Optional. The machine name.
+_none_
 
 **Options**<br>
 _-s, --status_: Show machine statuses.
