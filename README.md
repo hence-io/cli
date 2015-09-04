@@ -1,4 +1,4 @@
-# Hence Client
+# Hence CLI
 This project provides a command-line interface to the hence.io framework, and is the recommended way to use it.
 
 **NOTE:** This project is currently under heavy development, and is very likely to change. It is not recommended that anyone but hence.io developers use it at this point.
