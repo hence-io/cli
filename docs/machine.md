@@ -59,6 +59,7 @@ This will start an installation wizard for creating a new machine.
 The wizard will first ask you whether or not you would like to use a custom setup, or go with the defaults.  If you choose to use a custom setup (which is the initially selected option), you will be shown the default setting at each config prompt, and be able to accept it with pressing 'enter', or provide your own.
 
 The default VM settings are as follows:
+
 * **Install Location**: $HOME/hence - This location must be present.  If it does not exist, the installer will attempt to create it.
 * **Name**: hence
 * **IP Address**: 172.19.8.100
@@ -71,15 +72,18 @@ After setting up your config options, you will be prompted for final confirmatio
 Upon completion of the **machine init** wizard, a vagrant/virtualbox vm with a rancher server and agent will be installed and configured for use. Here are the main components it will install:
 
 _VM Host_
+
 * Ubuntu 14.04 OS
 * Docker 1.7.1 (with TCP forwarding to port 2375)
 
 _Vagrant Plugins_
+
 * [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest)
 * [vagrant-gatling-rsync](https://github.com/smerrill/vagrant-gatling-rsync)
 * [vagrant-hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater)
 
 _Rancher_ (Docker container management infrastructure.  [Homepage](http://rancher.com/rancher/) | [Docs](http://docs.rancher.com/))
+
 * Rancher Server instance
 * Rancher Agent instance
 * Rancher UI
@@ -96,7 +100,7 @@ _none_
 ### Start a VM
 Starts a machine using the `vagrant up --provision` command.
 
-It is run with the vagrant provisioning flag, as this ensures that the Rancher server and agent are correctly started from teh previous shutdown.
+It is run with the vagrant provisioning flag, as this ensures that the Rancher server and agent are correctly started from the previous shutdown.
 
 **Arguments**<br>
 _name_: Optional. The machine name.
@@ -110,7 +114,7 @@ _none_
 ### Restart a VM
 Restarts a machine using the `vagrant reload --provision` command.
 
-It is run with the vagrant provisioning flag, as this ensures that the Rancher server and agent are correctly started from teh previous shutdown.
+It is run with the vagrant provisioning flag, as this ensures that the Rancher server and agent are correctly started from the previous shutdown.
 
 **Arguments**<br>
 _name_: Optional. The machine name.
@@ -175,6 +179,7 @@ _none_
 Destroy a machine using the `vagrant destroy` command.
 
 **NOTE**: This will remove/destroy the following:
+
 1. The machine from the Hence machines list
 2. The vagrant VM definitions for the machine
 3. The virtualbox vm associated with the machine
@@ -229,6 +234,8 @@ The -x (or --export) flag is used to automatically export the required variables
 
 `eval $(hence machine connect -x)`
 
+**NOTE:** You should not run any flags other than -x while running within an eval() command.
+
 **Arguments**<br>
 _name_: Optional. The machine name. Used to set a different machine as active.
 
@@ -281,6 +288,7 @@ _none_
 This will start a machine update wizard, that will allow you to update any of the config parameters, including install location, that you set when creating the machine.
 
 The following VM settings can be updated:
+
 * **Install Location**
 * **Name**
 * **IP Address**

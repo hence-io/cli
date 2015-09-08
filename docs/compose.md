@@ -60,7 +60,7 @@ _-d, --dir [directory]_: Directory containing the docker-compose.yml and rancher
 
 ## rancher-help
 ### View the help text for rancher-compose
-Because Hence Compose is primarily a wrapper around rancher-compose, it can be helpful to access teh help documentation for it through the Hence CLI.
+Because Hence Compose is primarily a wrapper around rancher-compose, it can be helpful to access the help documentation for it through the Hence CLI.
 
 **Arguments**<br>
 _none_
