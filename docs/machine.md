@@ -33,17 +33,17 @@ If you are unsure of what your various machine names are, you can get a full lis
 Command | Description
 --- | ---
 <br>[init](#init) <br><br> | <br>Initialize a new VM<br><br>
-<br>[start](#start) [name]<br><br> | <br>Start a VM<br><br>
-<br>[restart](#restart) [name]<br><br> | <br>Restart a VM<br><br>
+<br>[start](#start) [options] [name]<br><br> | <br>Start a VM<br><br>
+<br>[restart](#restart) [options] [name]<br><br> | <br>Restart a VM<br><br>
 <br>[stop](#stop) [name]<br><br> | <br>Stop a VM<br><br>
 <br>[ssh](#ssh) [options] [name]<br><br> | <br>SSH into a VM<br><br>
 <br>[sync](#sync) [options] [name]<br><br> | <br>Sync a VM's shared folders with the host.  Runs in watch mode by default<br><br>
-<br>[provision](#provision) [name]<br><br> | <br>Provision a VM<br><br>
+<br>[provision](#provision) [options] [name]<br><br> | <br>Provision a VM<br><br>
 <br>[destroy](#destroy) [name]<br><br> | <br>Destroy a vm<br><br>
 <br>[list](#list) [options]<br><br> | <br>List all available machines<br><br>
 <br>[current](#current) [name]<br><br> | <br>Get the current machine definition, or set it by providing a name argument<br><br>
 <br>[connect](#connect) [options] [name]<br><br> | <br>Connect to a hence machine's Docker host and Rancher Dashboard<br><br>
-<br>[dashboard](#dashboard) [name]<br><br> | <br>Connect to a hence machine VM and/or Rancher Dashboard<br><br>
+<br>[dashboard](#dashboard) [options] [name]<br><br> | <br>Connect to a hence machine VM and/or Rancher Dashboard<br><br>
 <br>[config](#config) [name]<br><br> | <br>View a VM's configuration<br><br>
 <br>[status](#status) [name]<br><br> | <br>View a VM's configuration<br><br>
 <br>[update](#update) [name]<br><br> | <br>Update a VM's configuration<br><br>
@@ -106,7 +106,8 @@ It is run with the vagrant provisioning flag, as this ensures that the Rancher s
 _name_: Optional. The machine name.
 
 **Options**<br>
-_none_
+_-d, --dashboard_: Open up the dashboard in-browser when ready.<br>
+_-i, --ip_: Use the ip as the hostname when opening the dashboard. Defaults to machine name.
 
 [Back to Command List](#command-list)<br><br>
 
@@ -120,7 +121,8 @@ It is run with the vagrant provisioning flag, as this ensures that the Rancher s
 _name_: Optional. The machine name.
 
 **Options**<br>
-_none_
+_-d, --dashboard_: Open up the dashboard in-browser when ready.<br>
+_-i, --ip_: Use the ip as the hostname when opening the dashboard. Defaults to machine name.
 
 [Back to Command List](#command-list)<br><br>
 
@@ -170,7 +172,8 @@ Provision a machine using the `vagrant provision` command.
 _name_: Optional. The machine name.
 
 **Options**<br>
-_none_
+_-d, --dashboard_: Open up the dashboard in-browser when ready.<br>
+_-i, --ip_: Use the ip as the hostname when opening the dashboard. Defaults to machine name.
 
 [Back to Command List](#command-list)<br><br>
 
@@ -255,7 +258,7 @@ Will open the Rancher UI Dashboard in the user's default browser.
 _name_: Optional. The machine name.
 
 **Options**<br>
-_none_
+_-i, --ip_: Use the ip as the hostname when opening the dashboard. Defaults to machine name.
 
 [Back to Command List](#command-list)<br><br>
 
