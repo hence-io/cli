@@ -34,7 +34,7 @@ To initialize a new [Hence.io development environment](https://github.com/hence-
 `hence machine init`
 
 This should open up an interactive wizard as pictured below.
-![Installation type options](images/install-wizard.gif "Installation: Step-1")
+![Installation type options](doc/images/install-wizard.gif "Installation: Step-1")
 
 The wizard will first ask you whether or not you would like to use a custom setup, or go with the defaults.  If you choose to use a custom setup (which is the initially selected option), you will be shown the default setting at each config prompt, and be able to accept it with pressing 'enter', or provide your own.
 
@@ -148,6 +148,6 @@ Click the appropriate links below to read full documentation of the various Henc
 
 Command | Description
 --- | ---
-<br>[machine](./docs/machine.md)<br><br> | <br>Create and manage Hence.io Machines.  Currently limitied to local VM's, but remote Machine functionality is coming soon.<br><br>
-<br>[compose](./docs/compose.md)<br><br> | <br>Run rancher-compose commands against any machine.  The `project` command will encompass what this does and more, but this is very useful if you'd like to experiment with on-off stacks without creating Hence Projects out of them.<br><br>
-<br>[project](./docs/project.md)<br><br> | <br>**_(coming soon)_** Create and manage Hence.io Projects.  Allows easy definition of Hence Projects, and running them on any active Machines.<br><br>
+<br>[machine](./doc/machine.md)<br><br> | <br>Create and manage Hence.io Machines.  Currently limitied to local VM's, but remote Machine functionality is coming soon.<br><br>
+<br>[compose](./doc/compose.md)<br><br> | <br>Run rancher-compose commands against any machine.  The `project` command will encompass what this does and more, but this is very useful if you'd like to experiment with on-off stacks without creating Hence Projects out of them.<br><br>
+<br>[project](./doc/project.md)<br><br> | <br>**_(coming soon)_** Create and manage Hence.io Projects.  Allows easy definition of Hence Projects, and running them on any active Machines.<br><br>
