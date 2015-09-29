@@ -1,6 +1,6 @@
 {
   "name": "hence-cli",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "A command-line tool to interface with the hence.io project",
   "main": "index.js",
   "scripts": {
@@ -30,12 +30,12 @@
     "commander": "^2.8.1",
     "complete": "^0.4.4",
     "fs-extra": "^0.23.1",
-    "hence-inquisitor": "hence-io/hence-inquisitor#v0.2.0",
+    "hence-inquisitor": "git+https://git@github.com/hence-io/hence-inquisitor.git#v0.2.0",
     "gulp": "^3.9.0",
-    "gulp-conflict": "hence-io/gulp-conflict",
+    "gulp-conflict": "git+https://git@github.com/hence-io/gulp-conflict.git#0.4.0",
     "gulp-git": "^1.2.4",
     "gulp-template": "^3.0.0",
-    "hence-util": "hence-io/hence-util#v0.0.3",
+    "hence-util": "git+https://git@github.com/hence-io/hence-util.git#v0.0.3",
     "lodash": "^3.10.1",
     "needle": "^0.10.0",
     "path-extra": "^1.0.3",
