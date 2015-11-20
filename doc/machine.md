@@ -106,7 +106,7 @@ It is run with the vagrant provisioning flag, as this ensures that the Rancher s
 _name_: Optional. The machine name.
 
 **Options**<br>
-_-d, --dashboard_: Open up the dashboard in-browser when ready.<br>
+_-o, --open-dashboard_: Open up the dashboard in-browser when ready.<br>
 _-i, --ip_: Use the ip as the hostname when opening the dashboard. Defaults to machine name.
 
 [Back to Command List](#command-list)<br><br>
@@ -121,7 +121,7 @@ It is run with the vagrant provisioning flag, as this ensures that the Rancher s
 _name_: Optional. The machine name.
 
 **Options**<br>
-_-d, --dashboard_: Open up the dashboard in-browser when ready.<br>
+_-o, --open-dashboard_: Open up the dashboard in-browser when ready.<br>
 _-i, --ip_: Use the ip as the hostname when opening the dashboard. Defaults to machine name.
 
 [Back to Command List](#command-list)<br><br>
@@ -172,7 +172,7 @@ Provision a machine using the `vagrant provision` command.
 _name_: Optional. The machine name.
 
 **Options**<br>
-_-d, --dashboard_: Open up the dashboard in-browser when ready.<br>
+_-o, --open-dashboard_: Open up the dashboard in-browser when ready.<br>
 _-i, --ip_: Use the ip as the hostname when opening the dashboard. Defaults to machine name.
 
 [Back to Command List](#command-list)<br><br>
