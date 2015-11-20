@@ -55,6 +55,9 @@ _none_
 **Options**<br>
 _-m, --machine [name]_: Which hence machine to use.<br>
 _-d, --dir [directory]_: Directory containing the docker-compose.yml and rancher-compose files, if not in current directory.
+_-f, --file [filename]_: Specify an alternate compose file (default: docker-compose.yml)
+_-r, --rancher-file [filename]_: Specify an alternate Rancher compose file (default: rancher-compose.yml)
+_-p, --project-name [name]_: Specify an alternate project name (default: directory name)"
 
 [Back to Command List](#command-list)<br><br>
 
