@@ -49,6 +49,7 @@ Command | Description
 <br>[update](#update) [name]<br><br> | <br>Update a VM's configuration<br><br>
 <br>[upgrade](#upgrade) [name]<br><br> | <br>Upgrade VM provisioning environment to latest<br><br>
 <br>[unlock](#unlock) [name]<br><br> | <br>Terminate all running vagrant processes that may be locking a VM<br><br>
+<br>[clear-mount-cache](#clear-mount-cache) [name]<br><br> | <br>Clear folder mount caches that are preventing a VM from starting<br><br>
 
 ---
 
@@ -113,15 +114,16 @@ _-i, --ip_: Use the ip as the hostname when opening the dashboard. Defaults to m
 
 ## restart
 ### Restart a VM
-Restarts a machine using the `vagrant reload --provision` command.
+Restarts a machine using the `vagrant reload` command.
 
-It is run with the vagrant provisioning flag, as this ensures that the Rancher server and agent are correctly started from the previous shutdown.
+With the `-p` or `--provision` option, it will run with the vagrant provisioning flag, which ensures that the docker service is restarted and the Rancher server and agent are correctly started from the previous shutdown.
 
 **Arguments**<br>
 _name_: Optional. The machine name.
 
 **Options**<br>
 _-o, --open-dashboard_: Open up the dashboard in-browser when ready.<br>
+_-p, --provision_: Force the provisioners to run on reload.<br>
 _-i, --ip_: Use the ip as the hostname when opening the dashboard. Defaults to machine name.
 
 [Back to Command List](#command-list)<br><br>
@@ -330,6 +332,28 @@ _none_
 Every now and then, a vagrant vm can enter a locked state if one of the processes it was running fails, and isn't able to exit properly.
 
 This command will terminate any vagrant processes running against the machine, and you should be able to resume working with any of the commands that run via vagrant.
+
+**Arguments**<br>
+_name_: Optional. The machine name.
+
+**Options**<br>
+_none_
+
+
+[Back to Command List](#command-list)<br><br>
+
+## clear-mount-cache
+### Clear folder mount caches that are preventing a VM from starting
+Every now and then, a vagrant vm can get 'confused' about it's folder mounts, especially nfs-mounts.
+
+This command will remove the 'synched_folders' file from the vagrant machine config, and also remove the /etc/exports file from the local filesystem.
+
+**Arguments**<br>
+_name_: Optional. The machine name.
+
+**Options**<br>
+_none_
+
 
 [Back to Command List](#command-list)<br><br>
 
