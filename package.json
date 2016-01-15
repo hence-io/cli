@@ -1,6 +1,6 @@
 {
   "name": "hence-cli",
-  "version": "0.0.33",
+  "version": "0.0.34",
   "description": "A command-line tool to interface with the hence.io project",
   "main": "index.js",
   "scripts": {
