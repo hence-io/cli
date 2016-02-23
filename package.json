@@ -1,6 +1,6 @@
 {
   "name": "hence-cli",
-  "version": "0.0.36",
+  "version": "0.1.0",
   "description": "A command-line tool to interface with the hence.io project",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   "dependencies": {
     "commander": "^2.8.1",
     "complete": "^0.4.4",
-    "fs-extra": "^0.23.1",
+    "fs-extra": "^0.26.5",
     "gulp": "^3.9.0",
     "gulp-conflict": "git+https://git@github.com/hence-io/gulp-conflict.git#0.4.0",
     "gulp-git": "^1.2.4",
